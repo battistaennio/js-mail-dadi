@@ -18,14 +18,17 @@ verify.addEventListener("click",
         for (let i = 0; i < whiteList.length; i++) {
             
             //selettore elementi lista
-            let listGuest = whiteList[i]
+            listGuest = whiteList[i];
 
             //condizione per far combaciare la userMail con elementi lista
             if (userMail === listGuest) {
                 console.log("yess");
+            } else {
+                console.log("nope");
             }
+
         } 
 
-     }
+    }
 )
 
