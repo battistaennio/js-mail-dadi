@@ -12,22 +12,30 @@ verify.addEventListener("click",
     function () {
 
         //lettura inputMail
-        let userMail = inputMail.value
+        let userMail = inputMail.value;
+
+        //booleano per consentire verifica
+        let combacia = false;
 
         //ciclo per esaminare elementi whiteList
         for (let i = 0; i < whiteList.length; i++) {
             
             //selettore elementi lista
             listGuest = whiteList[i];
-
-            //condizione per far combaciare la userMail con elementi lista
+            
+            //condizione per verificare se la mail combacia
             if (userMail === listGuest) {
-                console.log("yess");
-            } else {
-                console.log("nope");
-            }
+                combacia = true;
+            } 
 
         } 
+        
+        //output verifica
+        if (combacia === true) {
+            console.log("yes");
+        } else {
+            console.log("no");
+        }
 
     }
 )
