@@ -9,3 +9,11 @@ console.log("Giocata PC: ", pcPlay);
 let UserPlay = Math.floor(Math.random() * 6) + 1;
 console.log("Giocata User: ", UserPlay);
 
+//regole del gioco
+if (pcPlay > UserPlay) {
+    console.log("vince pc");
+} else if (pcPlay < UserPlay) {
+    console.log("vince user");
+} else {
+    console.log("parità");
+}
