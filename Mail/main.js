@@ -10,7 +10,18 @@ const whiteList = ["gino@gmail.com", "pino@gmail.com", "pippo@gmail.com", "pluto
 //creazione evento su click
 verify.addEventListener("click",
     function () {
+
+        //lettura inputMail
         let userMail = inputMail.value
-        console.log("l'input mail è: ", userMail);
-    }
+
+        //ciclo per esaminare elementi whiteList
+        for (let i = 0; i < whiteList.length; i++) {
+            
+            //selettore elementi lista
+            let listGuest = whiteList[i]
+            console.log(listGuest);
+        }
+
+     }
 )
+
