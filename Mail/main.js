@@ -19,8 +19,12 @@ verify.addEventListener("click",
             
             //selettore elementi lista
             let listGuest = whiteList[i]
-            console.log(listGuest);
-        }
+
+            //condizione per far combaciare la userMail con elementi lista
+            if (userMail === listGuest) {
+                console.log("yess");
+            }
+        } 
 
      }
 )
