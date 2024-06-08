@@ -1,8 +1,9 @@
 //Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
-//selettore input e button
+//selettore input, button e esito
 const inputMail = document.querySelector("input");
 const verify = document.querySelector("button");
+let output = document.getElementById("output");
 
 //creazione lista
 const whiteList = ["gino@gmail.com", "pino@gmail.com", "pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com"]
@@ -27,14 +28,15 @@ verify.addEventListener("click",
             if (userMail === listGuest) {
                 combacia = true;
             } 
-
         } 
         
         //output verifica
         if (combacia === true) {
-            console.log("yes");
+            output.innerText = "ACCESSO CONSENTITO";
+            output.style.color = "green"
         } else {
-            console.log("no");
+            output.innerText = "ACCESSO NEGATO";
+            output.style.color = "red"
         }
 
     }
