@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.txt-cntr{
+text-align: center;
+}
+
+#container-box{
+    margin: 20px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 50%;
+    min-height: 100px;
+}
+
+#vs{
+    width: 50px;
+}
+
+.box span{
+    font-size: 200px;
+}
+
+h3{
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
